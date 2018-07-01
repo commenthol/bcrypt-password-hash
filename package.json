@@ -1,0 +1,55 @@
+{
+  "name": "bcrypt-password-hash",
+  "version": "1.0.0-0",
+  "description": "hash passwords with bcrypt",
+  "keywords": [
+    "bcrypt",
+    "hash",
+    "password"
+  ],
+  "homepage": "https://github.com/commenthol/bcrypt-password-hash#readme",
+  "bugs": {
+    "url": "https://github.com/commenthol/bcrypt-password-hash/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commenthol/bcrypt-password-hash.git"
+  },
+  "license": "Unlicense",
+  "author": "commenthol <commenthol@gmail.com>",
+  "main": "src",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "all": "npm run lint && npm test",
+    "lint": "eslint '**/*.js'",
+    "coverage": "nyc -r text -r html npm test",
+    "test": "mocha"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "mocha": true
+    },
+    "extends": [
+      "standard"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "^2.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^5.0.5"
+  },
+  "engine": {
+    "node": ">=8.0.0"
+  }
+}
